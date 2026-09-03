@@ -49,4 +49,15 @@ Through this project, I hope to better understand:
 - Interactive Dashboards
 - Real-Time Data Visualization
 
+## Project Files
+- Flight Data Analysis
+- Data Visualizations
+- Research Notes
+- Python Scripts
+
+## Author
+Sarp AKAR
+
+
+
 
