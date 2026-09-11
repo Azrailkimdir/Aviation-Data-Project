@@ -3,7 +3,7 @@ import csv
 import os
 from datetime import datetime
 
-with open("../data/raw/stats.json", "r") as f:
+with open("/Users/murathanakar/data/raw/stats.json", "r") as f:
     data = json.load(f)
 
 total = data["total"]
