@@ -15,20 +15,31 @@ The purpose of this project is to explore real-world aviation data collected usi
 ## Current Status
 
 ✅ RTL-SDR configured
+
 ✅ ADS-B messages received
+
 ✅ JSON data collection active
+
 ✅ Historical CSV logging active
+
 ✅ Automated startup configured
+
 ✅ OpenSky Network feeder online
+
 ✅ Real-time radar dashboard operational
 
 ## Current Capabilities
 
 ✅ Real-time aircraft tracking
+
 ✅ Historical ADS-B data collection
+
 ✅ Automated CSV logging
+
 ✅ OpenSky Network feeder integration
+
 ✅ Interactive radar dashboard
+
 ✅ Traffic analysis preparation
 
 ## Repository Structure
