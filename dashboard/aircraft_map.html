@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sarp's ADS-B Radar</title>
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<style>
+body{
+    margin:0;
+}
+
+#map{
+    height:100vh;
+}
+
+.info{
+    position:absolute;
+    top:10px;
+    left:10px;
+    z-index:9999;
+    background:white;
+    padding:12px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+    font-family:Arial;
+    min-width:220px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="info">
+
+<b>📡 Sarp's ADS-B Radar</b><br>
+
+Powered by:<br>
+RTL-SDR + tar1090
+
+<hr>
+
+<div id="stats">
+Loading...
+</div>
+
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+
+var map = L.map('map').setView([40.2,32.6],8);
+
+L.tileLayer(
+'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+{
+    maxZoom:19
+}
+).addTo(map);
+
+fetch('../data/aircraft.json')
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+
+    if(!data.aircraft){
+        return;
+    }
+
+    var total = 0;
+    var thy = 0;
+    var pgt = 0;
+    var tkj = 0;
+    var other = 0;
+
+    var points = [];
+
+    data.aircraft.forEach(function(ac){
+
+        var callsign = (ac.flight || "").trim();
+
+        total++;
+
+        if(callsign.startsWith("THY")){
+            thy++;
+        }
+        else if(callsign.startsWith("PGT")){
+            pgt++;
+        }
+        else if(callsign.startsWith("TKJ")){
+            tkj++;
+        }
+        else{
+            other++;
+        }
+
+        var lat = ac.lat || (ac.lastPosition && ac.lastPosition.lat);
+        var lon = ac.lon || (ac.lastPosition && ac.lastPosition.lon);
+
+        var heading = ac.track || 0;
+        var speed = ac.gs || 0;
+        var altitude = ac.alt_baro || 0;
+        var rssi = ac.rssi || 0;
+
+        if(lat && lon){
+
+            points.push([lat,lon]);
+
+            var color = "deepskyblue";
+
+            if(callsign.startsWith("THY")){
+                color = "red";
+            }
+            else if(callsign.startsWith("PGT")){
+                color = "orange";
+            }
+            else if(callsign.startsWith("SXS")){
+                color = "gold";
+            }
+            else if(callsign.startsWith("TKJ")){
+                color = "limegreen";
+            }
+            else if(callsign.startsWith("ETD")){
+                color = "purple";
+            }
+
+            var planeIcon = L.divIcon({
+                html:
+                "<div style='" +
+                "font-size:42px;" +
+                "font-weight:bold;" +
+                "color:" + color + ";" +
+                "transform:rotate(" + heading + "deg);" +
+                "text-shadow:1px 1px 2px white,-1px -1px 2px white;" +
+                "'>✈</div>",
+
+                className:"",
+                iconSize:[42,42]
+            });
+
+            L.marker(
+                [lat,lon],
+                {
+                    icon:planeIcon
+                }
+            )
+            .addTo(map)
+            .bindPopup(
+
+                "<b>✈ Flight:</b> " + callsign +
+
+                "<br><b>🧭 Heading:</b> " +
+                Math.round(heading) + "°" +
+
+                "<br><b>🚀 Speed:</b> " +
+                Math.round(speed * 1.852) +
+                " km/h" +
+
+                "<br><b>📏 Altitude:</b> " +
+                altitude +
+                " ft" +
+
+                "<br><b>📶 RSSI:</b> " +
+                rssi +
+
+                "<br><b>📍 Latitude:</b> " +
+                lat.toFixed(4) +
+
+                "<br><b>📍 Longitude:</b> " +
+                lon.toFixed(4)
+
+            );
+
+        }
+
+    });
+
+    document.getElementById("stats").innerHTML =
+
+    "✈ Aircraft: " + total +
+
+    "<br>🔴 THY: " + thy +
+
+    "<br>🟠 PGT: " + pgt +
+
+    "<br>🟢 TKJ: " + tkj +
+
+    "<br>🔵 Other: " + other;
+
+    if(points.length > 0){
+        map.fitBounds(points);
+    }
+
+})
+.catch(function(error){
+    console.log(error);
+});
+
+setTimeout(function(){
+    location.reload();
+},30000);
+
+</script>
+
+</body>
+</html>
