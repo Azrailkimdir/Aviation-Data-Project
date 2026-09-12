@@ -1,0 +1,39 @@
+# ADS-B raw data
+data/raw/*
+
+# Historical flight logs
+data/history/*.csv
+
+# Runtime files
+data/aircraft.json
+data/opensky.json
+
+# macOS files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Local configs
+.env# ADS-B raw data
+data/raw/*
+
+# Historical flight logs
+data/history/*.csv
+
+# macOS files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Local configs
+.env
