@@ -50,7 +50,7 @@ The ADS-B ground station is connected to the OpenSky Network and contributes air
 
 The ADS-B receiver has been successfully registered and approved as an OpenSky data source.
 
-docs/images/opensky-sensors.png
+- [Opensky Sensors](opensky-sensors.png)
 
 *Registered and approved ADS-B sensors within the OpenSky Network.*
 
@@ -60,9 +60,19 @@ docs/images/opensky-sensors.png
 
 The system operates through a Docker-based deployment environment supporting ADS-B decoding, data collection, OpenSky integration, and dashboard services.
 
-docs/images/docker-services.png
+- [Docker Services](docker-services.png)
 
 *Docker containers supporting ADS-B data collection and OpenSky feeder operations.*
+
+---
+
+### Sarp's ADS-B Radar Map
+
+A custom web-based radar dashboard developed to visualize real-time ADS-B aircraft data received by the personal ground station.
+
+The dashboard provides a live view of aircraft positions, tracks, and telemetry data while supporting ongoing aviation data collection and analysis.
+
+- [Radar](radar-dashboard.png)
 
 ---
 
