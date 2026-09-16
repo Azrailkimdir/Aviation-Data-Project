@@ -10,7 +10,7 @@ The project combines aviation, programming, hardware, and data analytics to coll
 
 The purpose of this project is to collect and analyze real-world aviation data using ADS-B technology while learning more about aircraft operations, flight tracking systems, aviation analytics, and air traffic patterns.
 
-The project also serves as a hands-on introduction to radio frequency technology, software-defined radio (SDR), data collection, and Python-based aviation analytics.
+The project also serves as a hands-on introduction to radio-frequency technology, software-defined radio (SDR), data collection, and Python-based aviation analytics.
 
 ---
 
@@ -40,7 +40,7 @@ The project also serves as a hands-on introduction to radio frequency technology
 
 The ADS-B ground station is connected to the OpenSky Network and contributes aircraft tracking data to the global aviation research community.
 
-- [Opensky Account](opensky-account.png)
+![OpenSky Account](opensky-account.png)
 
 *OpenSky Network account used for ADS-B data contribution.*
 
@@ -50,7 +50,7 @@ The ADS-B ground station is connected to the OpenSky Network and contributes air
 
 The ADS-B receiver has been successfully registered and approved as an OpenSky data source.
 
-- [Opensky Sensors](opensky-sensors.png)
+![OpenSky Sensors](opensky-sensors.png)
 
 *Registered and approved ADS-B sensors within the OpenSky Network.*
 
@@ -60,24 +60,37 @@ The ADS-B receiver has been successfully registered and approved as an OpenSky d
 
 The system operates through a Docker-based deployment environment supporting ADS-B decoding, data collection, OpenSky integration, and dashboard services.
 
-- [Docker Services](docker-services.png)
+![Docker Services](docker-services.png)
 
 *Docker containers supporting ADS-B data collection and OpenSky feeder operations.*
 
 ---
 
-### Sarp's ADS-B Radar Map
+## Live Aircraft Monitoring Dashboard
 
-A custom web-based radar dashboard developed to visualize real-time ADS-B aircraft data received by the personal ground station.
+A custom web-based dashboard developed to visualize real-time ADS-B aircraft telemetry collected by the ground station.
 
-The dashboard provides a live view of aircraft positions, tracks, and telemetry data while supporting ongoing aviation data collection and analysis.
+The dashboard provides a live view of aircraft tracks, positions, and operational data, creating a foundation for future aviation analytics and traffic pattern research.
 
-- [Radar](radar-dashboard.png)
+![Radar](radar-dashboard.png)
+
+### Dashboard Features
+
+✅ Real-time aircraft tracking
+
+✅ Live aircraft position monitoring
+
+✅ ADS-B telemetry visualization
+
+✅ JSON data integration
+
+✅ Traffic observation and analysis support
 
 ---
 
 ## System Architecture
 
+```text
 RTL-SDR Blog V3
         │
         ▼
@@ -87,6 +100,7 @@ RTL-SDR Blog V3
         ├── CSV Logging
         ├── Radar Dashboard
         └── OpenSky Network
+```
 
 ---
 
@@ -172,6 +186,16 @@ Planned areas of exploration include:
 
 ---
 
+## Why This Project Matters
+
+This project goes beyond simple aircraft tracking.
+
+It combines radio-frequency technology, software-defined radio, aviation systems, programming, visualization, and real-world data collection into a single engineering-focused learning experience.
+
+By collecting ADS-B telemetry and contributing data to the OpenSky Network, the project provides hands-on exposure to technologies used in modern aviation, air traffic monitoring, and aerospace-related data systems.
+
+---
+
 ## Educational Value
 
 This project combines multiple disciplines:
@@ -192,6 +216,7 @@ while providing hands-on experience with real-world aircraft data and modern fli
 
 ## Repository Structure
 
+```text
 data/
 ├── raw/
 ├── processed/
@@ -204,10 +229,13 @@ dashboard/
 visualizations/
 
 docs/
-└── images/
-    ├── opensky-account.png
-    ├── opensky-sensors.png
-    └── docker-services.png
+
+images/
+├── opensky-account.png
+├── opensky-sensors.png
+├── docker-services.png
+└── radar-dashboard.png
+```
 
 ---
 
@@ -229,3 +257,6 @@ Planned future improvements include:
 ## Author
 
 Sarp Akar
+---
+
+
