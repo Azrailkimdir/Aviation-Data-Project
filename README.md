@@ -40,7 +40,7 @@ The project also serves as a hands-on introduction to radio frequency technology
 
 The ADS-B ground station is connected to the OpenSky Network and contributes aircraft tracking data to the global aviation research community.
 
-docs/images/opensky-account.png
+- [Opensky Account](opensky-account.png)
 
 *OpenSky Network account used for ADS-B data contribution.*
 
