@@ -160,11 +160,16 @@ RTL-SDR Blog V3
 
 ## Initial Results
 
-- 193 valid ADS-B messages captured
-- 53 aircraft tracks observed
-- 5 aircraft positions successfully decoded
-- Continuous ADS-B monitoring established
-- OpenSky Network data contribution active
+## Initial Results
+
+- Successfully established a personal ADS-B receiving station
+- Successfully decoded real-world aircraft telemetry
+- Established continuous ADS-B data collection
+- Implemented automated JSON and CSV logging
+- Developed a real-time aircraft monitoring dashboard
+- Integrated the station with the OpenSky Network
+- Began contributing aviation data to open aviation research initiatives
+- Created an infrastructure for future aviation analytics and aircraft traffic studies
 
 ---
 
