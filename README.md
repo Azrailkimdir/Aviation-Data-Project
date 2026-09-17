@@ -94,6 +94,8 @@ The dashboard provides a live view of aircraft tracks, positions, and operationa
 
 ![Radar](radar-dashboard.png)
 
+*Real-time aircraft tracking dashboard connected to the ADS-B ground station.*
+
 ### Dashboard Features
 
 ✅ Real-time aircraft tracking
