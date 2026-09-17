@@ -21,7 +21,7 @@ The image below shows the operational ADS-B receiving station used for this proj
 The setup includes an RTL-SDR Blog V3 receiver, dipole antenna system, and a laptop running ADS-B decoding and data collection services.
 
 ![ADS-B Ground Station](ground-station-setup.jpg)
-*ground-station ADS-B receiving station used for real-time aircraft tracking, OpenSky Network integration, and aviation data collection.*
+*Ground-station ADS-B receiving station used for real-time aircraft tracking, OpenSky Network integration, and aviation data collection.*
 
 ### Ground Station Components
 
