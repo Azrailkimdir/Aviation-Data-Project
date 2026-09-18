@@ -10,3 +10,7 @@ Current datasets include:
 - Historical CSV logs
 - OpenSky Network contribution data
 - Raw hexadecimal ADS-B messages
+
+### Raw ADS-B Data Processing
+
+In addition to decoded aircraft telemetry, the station records raw ADS-B hexadecimal messages that can later be used for protocol analysis, decoding validation, and aviation data research.
