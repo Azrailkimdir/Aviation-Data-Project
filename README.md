@@ -149,23 +149,31 @@ RTL-SDR Blog V3
 
 ## Current Status
 
-✅ RTL-SDR configured
+✅ Real-time aircraft tracking
 
-✅ ADS-B messages received
+✅ Aircraft position decoding
 
-✅ Aircraft positions decoded
+✅ Historical ADS-B data collection
 
-✅ JSON data collection active
+✅ Automated CSV logging
 
-✅ Historical CSV logging active
+✅ Live JSON telemetry feed
 
-✅ Automated startup configured
+✅ Raw ADS-B hexadecimal message capture
 
-✅ OpenSky Network feeder online
+✅ ADS-B protocol level data collection
 
-✅ Real-time radar dashboard operational
+✅ Telemetry decoding validation
 
-✅ Docker deployment operational
+✅ OpenSky Network data contribution
+
+✅ Interactive radar dashboard
+
+✅ Aircraft traffic monitoring
+
+✅ Historical aircraft telemetry archiving
+
+✅ Data collection for future analytics
 
 ---
 
