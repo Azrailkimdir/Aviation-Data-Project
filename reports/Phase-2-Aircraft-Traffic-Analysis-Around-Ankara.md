@@ -86,3 +86,21 @@ Data collected through:
 
 This project builds upon the ADS-B infrastructure established during Phase 1 of the Aviation Data Project.
 
+## First Analysis
+
+### Aircraft Activity by Time of Day
+
+Objective:
+
+To identify the periods of highest and lowest aircraft activity around Ankara using ADS-B telemetry data collected through the ground station.
+
+Variables:
+
+- Timestamp
+- Aircraft Count
+- Hour of Day
+
+Expected Outcome:
+
+A visualization showing how aircraft activity changes throughout the day and identifying peak traffic periods.
+
