@@ -266,36 +266,54 @@ Current Phase
 
 The goal of this phase is to transform collected ADS-B telemetry into meaningful aviation insights.
 
-### Planned Areas of Analysis
+# Phase 2 – Aircraft Traffic Analysis Around Ankara
+
+## Current Phase
+
+The goal of this phase is to transform collected ADS-B telemetry into meaningful aviation insights.
+
+## Planned Areas of Analysis
 
 - Aircraft Traffic Analysis Around Ankara
 - Aircraft Type Distribution Analysis
 - Flight Altitude Analysis
 - Aircraft Activity by Time of Day
--         ## Analysis #1 Completed
-
-Dataset Size:
-- 1,705 aircraft observations
-
-Method:
-- ADS-B telemetry records were grouped by local observation hour.
-- Two approaches were used:
-  - Total observations
-  - Unique aircraft (HEX) observations
-
-Preliminary Findings:
-- Aircraft activity peaked between 18:00 and 20:00.
-- The highest number of unique aircraft was observed during the 18:00 hour.
-- Evening traffic appears significantly higher than other observed periods.
-
-Status:
-✅ Completed
-
 - Traffic Density Visualization
 - Aircraft Route Analysis
 - Python-Based Aviation Analytics
 - ADS-B Data Visualization Dashboards
 - OpenSky Network Contribution Metrics
+
+---
+
+## Analysis #1 Completed
+
+### Aircraft Activity by Time of Day
+
+Dataset Size:
+
+- 1,705 aircraft observations
+
+Method:
+
+- ADS-B telemetry records were grouped by local observation hour.
+- Two approaches were used:
+  - Total observations
+  - Unique aircraft (HEX) observations
+
+Results:
+
+- Peak observation period: 18:00-19:00
+- Highest unique aircraft count: 96 aircraft
+- Evening traffic was consistently higher than other observed periods
+
+Preliminary Findings:
+
+Aircraft activity around Ankara showed a clear concentration during evening hours. Analysis of 1,705 ADS-B observations revealed that the 18:00 hour contained the highest number of aircraft observations and the highest number of unique aircraft. This suggests that evening periods may represent the busiest traffic window within the currently available dataset.
+
+Status:
+
+✅ Completed
 
 ---
 
