@@ -114,3 +114,72 @@ Expected Outcome:
 
 A visualization showing how aircraft activity changes throughout the day and identifying peak traffic periods.
 
+---
+
+# Analysis #1 Completed
+
+## Aircraft Activity by Time of Day
+
+### Dataset
+
+- 1,705 ADS-B observations
+- Data collected using a local RTL-SDR ADS-B ground station
+- Collection period: approximately 1.5–2 weeks
+- Source: readsb + OpenSky integrated receiver
+
+### Methodology
+
+Two analytical approaches were applied:
+
+#### 1. Total Aircraft Observations
+
+All recorded ADS-B observations were grouped by local hour.
+
+#### 2. Unique Aircraft Analysis
+
+Aircraft were identified by their HEX addresses.
+
+Multiple observations of the same aircraft within a time period were treated as a single aircraft presence.
+
+### Visualization
+
+#### Total Aircraft Observations by Hour
+
+../visualizations/aircraft_activity_by_hour.png
+
+### Results
+
+| Hour | Unique Aircraft Observed |
+|------|--------------------------|
+| 08 | 6 |
+| 09 | 6 |
+| 11 | 6 |
+| 12 | 14 |
+| 13 | 18 |
+| 14 | 1 |
+| 17 | 8 |
+| 18 | 96 |
+| 19 | 73 |
+| 20 | 38 |
+| 21 | 20 |
+
+### Key Findings
+
+- Aircraft activity reached its highest level during the 18:00 hour.
+- A total of 96 unique aircraft were observed during the busiest observed period.
+- Traffic remained high between 18:00 and 20:00.
+- Evening activity was significantly higher than activity observed during other periods.
+
+### Discussion
+
+Analysis of 1,705 ADS-B observations indicates a clear concentration of aircraft activity during evening hours around Ankara.
+
+Both raw observation counts and unique HEX-based aircraft counts point to the same trend, suggesting that the observed evening peak is not simply caused by repeated recordings of the same aircraft.
+
+As additional telemetry is collected, future analyses will determine whether this pattern remains consistent over longer observation periods.
+
+### Status
+
+✅ Completed
+
+
