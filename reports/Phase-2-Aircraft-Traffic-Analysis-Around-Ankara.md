@@ -2,6 +2,8 @@
 
 Part of Aviation Data Project
 
+This phase focuses on transforming real ADS-B aircraft telemetry into meaningful aviation insights through analysis, visualization, and research.
+
 ## Project Goal
 
 I wanted to understand what aircraft traffic around Ankara looks like using real ADS-B data collected through my personal ground station.
