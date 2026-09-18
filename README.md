@@ -1,16 +1,24 @@
-# Aviation Data Project #1
+# Aviation Data Project
 
-Aviation Data Project #1 explores real-world aircraft operations through ADS-B technology, OpenSky Network integration, flight tracking, and data analysis.
+Aviation Data Project is an ongoing aerospace and aviation data initiative that explores real-world aircraft operations through ADS-B technology, OpenSky Network integration, flight tracking, and data analysis.
 
-The project combines aviation, programming, hardware, and data analytics to collect, visualize, and analyze real aircraft traffic data using a personal ADS-B receiving station.
+The project combines aviation, programming, software-defined radio (SDR), hardware systems, and data analytics to collect, visualize, and analyze real aircraft traffic data using a personal ADS-B receiving station.
 
 ---
 
-## Project Objective
+## Project Vision
 
-The purpose of this project is to collect and analyze real-world aviation data using ADS-B technology while learning more about aircraft operations, flight tracking systems, aviation analytics, and air traffic patterns.
+This project began with a simple question:
 
-The project also serves as a hands-on introduction to radio-frequency technology, software-defined radio (SDR), data collection, and Python-based aviation analytics.
+**What can real-world aircraft data teach us about aviation operations?**
+
+By building and operating a personal ADS-B ground station, I aim to better understand aircraft systems, air traffic activity, flight behavior, and aviation data analytics while developing skills in programming, data analysis, and engineering problem-solving.
+
+---
+
+# Phase 1 – ADS-B Ground Station ✅
+
+The first phase focused on building a working ADS-B data collection system capable of receiving, decoding, storing, and visualizing aircraft telemetry.
 
 ---
 
@@ -21,7 +29,8 @@ The image below shows the operational ADS-B receiving station used for this proj
 The setup includes an RTL-SDR Blog V3 receiver, dipole antenna system, and a laptop running ADS-B decoding and data collection services.
 
 ![ADS-B Ground Station](ground-station-setup.jpg)
-*Ground-station ADS-B receiving station used for real-time aircraft tracking, OpenSky Network integration, and aviation data collection.*
+
+*Operational ADS-B receiving station used for real-time aircraft tracking, OpenSky Network integration, and aviation data collection.*
 
 ### Ground Station Components
 
@@ -86,13 +95,13 @@ The system operates through a Docker-based deployment environment supporting ADS
 
 ---
 
-## Live Aircraft Monitoring Dashboard
+## Sarp's ADS-B Radar Map
 
-A custom web-based dashboard developed to visualize real-time ADS-B aircraft telemetry collected by the ground station.
+A custom web-based radar dashboard developed to visualize real-time ADS-B aircraft telemetry collected by the personal ground station.
 
-The dashboard provides a live view of aircraft tracks, positions, and operational data, creating a foundation for future aviation analytics and traffic pattern research.
+The dashboard provides a live view of aircraft positions, tracks, and telemetry data while supporting ongoing aviation data collection and analysis.
 
-![Radar](radar-dashboard.png)
+![Radar Dashboard](radar-dashboard.png)
 
 *Real-time aircraft tracking dashboard connected to the ADS-B ground station.*
 
@@ -100,13 +109,15 @@ The dashboard provides a live view of aircraft tracks, positions, and operationa
 
 ✅ Real-time aircraft tracking
 
-✅ Live aircraft position monitoring
+✅ Live ADS-B telemetry visualization
 
-✅ ADS-B telemetry visualization
+✅ Position and track monitoring
 
-✅ JSON data integration
+✅ Aircraft movement observation
 
-✅ Traffic observation and analysis support
+✅ Integration with JSON data streams
+
+✅ Support for future aviation analytics
 
 ---
 
@@ -200,11 +211,11 @@ RTL-SDR Blog V3
 
 ---
 
-## Research Goals
+# Phase 2 – Aircraft Traffic Analysis Around Ankara 🚧
 
-The long-term goal of this project is to transform raw ADS-B messages into meaningful aviation insights through data analysis, visualization, and engineering-focused research.
+The second phase of the project focuses on transforming collected aircraft telemetry into meaningful aviation insights.
 
-Planned areas of exploration include:
+### Planned Areas of Analysis
 
 - Aircraft Traffic Analysis Around Ankara
 - Aircraft Type Distribution Analysis
@@ -218,7 +229,7 @@ Planned areas of exploration include:
 
 ---
 
-## Why This Project Matters
+# Why This Project Matters
 
 This project goes beyond simple aircraft tracking.
 
@@ -228,9 +239,9 @@ By collecting ADS-B telemetry and contributing data to the OpenSky Network, the 
 
 ---
 
-## Educational Value
+# Educational Value
 
-This project combines multiple disciplines:
+This project combines:
 
 - Aviation
 - Aerospace Learning
@@ -246,7 +257,7 @@ while providing hands-on experience with real-world aircraft data and modern fli
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```text
 data/
@@ -263,6 +274,7 @@ visualizations/
 docs/
 
 images/
+├── ground-station-setup.jpg
 ├── opensky-account.png
 ├── opensky-sensors.png
 ├── docker-services.png
@@ -271,7 +283,7 @@ images/
 
 ---
 
-## Future Development
+# Future Development
 
 Planned future improvements include:
 
@@ -286,10 +298,10 @@ Planned future improvements include:
 
 ---
 
-## Author
+# Author
 
-Sarp AKAR
+## Sarp Akar
 
-Sep 2026
+Sept 2026
 
-
+Always Curious. Always Learning.
