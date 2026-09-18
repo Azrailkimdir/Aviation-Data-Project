@@ -10,6 +10,7 @@ Current datasets include:
 - Historical CSV logs
 - OpenSky Network contribution data
 - Raw hexadecimal ADS-B messages
+  🚧 Preliminary Analysis In Progress
 
 ### Raw ADS-B Data Processing
 
