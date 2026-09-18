@@ -130,8 +130,7 @@ Multiple observations of the same aircraft within a given hour were treated as a
 
 #### Unique Aircraft by Hour
 
-../visualizations/unique_aircraft_by_hour.png
-
+![Uniquelizations/unique_aircraft_by_hour.png
 
 ---
 
