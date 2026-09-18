@@ -1,0 +1,12 @@
+## Preliminary Dataset
+
+The station has already collected multiple days of real-world ADS-B telemetry data.
+
+Current datasets include:
+
+- ADS-B aircraft messages
+- Aircraft position reports
+- JSON telemetry feeds
+- Historical CSV logs
+- OpenSky Network contribution data
+- Raw hexadecimal ADS-B messages
