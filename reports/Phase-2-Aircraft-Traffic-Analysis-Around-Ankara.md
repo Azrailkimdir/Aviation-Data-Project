@@ -1,0 +1,76 @@
+# Phase 2 – Aircraft Traffic Analysis Around Ankara
+
+## Project Goal
+
+I wanted to understand what aircraft traffic around Ankara looks like using real ADS-B data collected through my personal ground station.
+
+This phase of the Aviation Data Project focuses on transforming raw aircraft telemetry into meaningful aviation insights through data collection, visualization, and analysis.
+
+---
+
+## Research Questions
+
+- When is aircraft activity around Ankara at its highest?
+- Which aircraft types appear most frequently?
+- What altitude ranges are most commonly observed?
+- What flight corridors are most commonly used?
+- What patterns can be identified from locally collected ADS-B data?
+
+---
+
+## Data Source
+
+Data collected through:
+
+- RTL-SDR Blog V3
+- ADS-B Ground Station
+- readsb
+- OpenSky Network Integration
+
+---
+
+## Planned Analysis
+
+### Aircraft Activity by Time of Day
+
+- Morning traffic
+- Afternoon traffic
+- Evening traffic
+- Night traffic
+
+### Aircraft Type Distribution
+
+- Most common aircraft models
+- Airline distribution
+- Fleet composition
+
+### Flight Altitude Analysis
+
+- Average altitude
+- Arrival vs departure profiles
+- Overflight patterns
+
+### Flight Corridor Analysis
+
+- Common arrival routes
+- Common departure routes
+- Aircraft movement patterns around Ankara
+
+---
+
+## Current Status
+
+🚧 Data collection in progress
+
+✅ ADS-B ground station operational
+
+✅ OpenSky Network integration operational
+
+✅ Historical logging active
+
+---
+
+## Notes
+
+This project builds upon the ADS-B infrastructure established during Phase 1 of the Aviation Data Project.
+
