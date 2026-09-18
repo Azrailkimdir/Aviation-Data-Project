@@ -4,6 +4,8 @@ Part of Aviation Data Project
 
 This phase focuses on transforming real ADS-B aircraft telemetry into meaningful aviation insights through analysis, visualization, and research.
 
+---
+
 ## Project Goal
 
 I wanted to understand what aircraft traffic around Ankara looks like using real ADS-B data collected through my personal ground station.
@@ -33,32 +35,17 @@ Data collected through:
 
 ---
 
-## Planned Analysis
+## Planned Areas of Analysis
 
-### Aircraft Activity by Time of Day
-
-- Morning traffic
-- Afternoon traffic
-- Evening traffic
-- Night traffic
-
-### Aircraft Type Distribution
-
-- Most common aircraft models
-- Airline distribution
-- Fleet composition
-
-### Flight Altitude Analysis
-
-- Average altitude
-- Arrival vs departure profiles
-- Overflight patterns
-
-### Flight Corridor Analysis
-
-- Common arrival routes
-- Common departure routes
-- Aircraft movement patterns around Ankara
+- Aircraft Traffic Analysis Around Ankara
+- Aircraft Type Distribution Analysis
+- Flight Altitude Analysis
+- Aircraft Activity by Time of Day ✅
+- Traffic Density Visualization
+- Aircraft Route Analysis
+- Python-Based Aviation Analytics
+- ADS-B Data Visualization Dashboards
+- OpenSky Network Contribution Metrics
 
 ---
 
@@ -80,45 +67,35 @@ Data collected through:
 
 ✅ Initial data analysis phase started
 
+✅ First analytical study completed
+
 ---
 
 ## Notes
 
 This project builds upon the ADS-B infrastructure established during Phase 1 of the Aviation Data Project.
 
-## First Analysis
-
-### Aircraft Activity by Time of Day
-
-Status:
-
-✅ Data collection completed
-
-✅ Preliminary dataset available
-
-🚧 Analysis in progress
-
----
-
-Objective:
-
-To identify the periods of highest and lowest aircraft activity around Ankara using ADS-B telemetry data collected through the ground station.
-
-Variables:
-
-- Timestamp
-- Aircraft Count
-- Hour of Day
-
-Expected Outcome:
-
-A visualization showing how aircraft activity changes throughout the day and identifying peak traffic periods.
-
 ---
 
 # Analysis #1 Completed
 
 ## Aircraft Activity by Time of Day
+
+### Status
+
+✅ Data collection completed
+
+✅ Preliminary dataset available
+
+✅ Analysis completed
+
+---
+
+### Objective
+
+To identify the periods of highest and lowest aircraft activity around Ankara using ADS-B telemetry data collected through the ground station.
+
+---
 
 ### Dataset
 
@@ -127,30 +104,36 @@ A visualization showing how aircraft activity changes throughout the day and ide
 - Collection period: approximately 1.5–2 weeks
 - Source: readsb + OpenSky integrated receiver
 
+---
+
 ### Methodology
 
-Two analytical approaches were applied:
+Two analytical approaches were applied.
 
 #### 1. Total Aircraft Observations
 
-All recorded ADS-B observations were grouped by local hour.
+All recorded ADS-B observations were grouped according to local observation hour.
 
 #### 2. Unique Aircraft Analysis
 
-Aircraft were identified by their HEX addresses.
+Aircraft were identified using unique HEX addresses.
 
-Multiple observations of the same aircraft within a time period were treated as a single aircraft presence.
+Multiple observations of the same aircraft within a given hour were treated as a single aircraft presence.
+
+---
 
 ### Visualization
 
-#### Total Aircraft Observations by Hour
+#### Aircraft Activity by Time of Day
 
 ../visualizations/aircraft_activity_by_hour.png
+
+---
 
 ### Results
 
 | Hour | Unique Aircraft Observed |
-|------|--------------------------|
+|--------|--------:|
 | 08 | 6 |
 | 09 | 6 |
 | 11 | 6 |
@@ -163,6 +146,8 @@ Multiple observations of the same aircraft within a time period were treated as 
 | 20 | 38 |
 | 21 | 20 |
 
+---
+
 ### Key Findings
 
 - Aircraft activity reached its highest level during the 18:00 hour.
@@ -170,16 +155,29 @@ Multiple observations of the same aircraft within a time period were treated as 
 - Traffic remained high between 18:00 and 20:00.
 - Evening activity was significantly higher than activity observed during other periods.
 
+---
+
 ### Discussion
 
 Analysis of 1,705 ADS-B observations indicates a clear concentration of aircraft activity during evening hours around Ankara.
 
 Both raw observation counts and unique HEX-based aircraft counts point to the same trend, suggesting that the observed evening peak is not simply caused by repeated recordings of the same aircraft.
 
+The highest activity was observed during the 18:00 hour, when 96 unique aircraft were detected.
+
 As additional telemetry is collected, future analyses will determine whether this pattern remains consistent over longer observation periods.
+
+---
+
+### Conclusion
+
+The first analysis successfully demonstrated that ADS-B telemetry collected through the local ground station can be transformed into meaningful aviation insights.
+
+The findings indicate a noticeable concentration of aircraft activity during evening hours around Ankara, providing the first evidence-based observation generated from the Aviation Data Project dataset.
+
+---
 
 ### Status
 
 ✅ Completed
-
 
