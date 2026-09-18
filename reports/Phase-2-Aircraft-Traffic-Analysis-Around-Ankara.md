@@ -126,7 +126,7 @@ Multiple observations of the same aircraft within a given hour were treated as a
 
 #### Aircraft Activity by Time of Day
 
-../visualizations/aircraft_activity_by_hour.png
+![Aircraftzations/aircraft_activity_by_hour.png
 
 ---
 
