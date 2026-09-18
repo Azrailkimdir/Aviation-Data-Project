@@ -64,13 +64,21 @@ Data collected through:
 
 ## Current Status
 
-🚧 Data collection in progress
-
 ✅ ADS-B ground station operational
 
-✅ OpenSky Network integration operational
+✅ OpenSky Network contribution active
 
-✅ Historical logging active
+✅ Continuous ADS-B data collection established
+
+✅ Historical CSV logging active
+
+✅ JSON telemetry collection active
+
+✅ Radar dashboard operational
+
+✅ Over 7 days of aircraft telemetry collected
+
+✅ Initial data analysis phase started
 
 ---
 
