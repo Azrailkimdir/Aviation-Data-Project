@@ -90,6 +90,16 @@ This project builds upon the ADS-B infrastructure established during Phase 1 of 
 
 ### Aircraft Activity by Time of Day
 
+Status:
+
+✅ Data collection completed
+
+✅ Preliminary dataset available
+
+🚧 Analysis in progress
+
+---
+
 Objective:
 
 To identify the periods of highest and lowest aircraft activity around Ankara using ADS-B telemetry data collected through the ground station.
