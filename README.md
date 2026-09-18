@@ -272,6 +272,25 @@ The goal of this phase is to transform collected ADS-B telemetry into meaningful
 - Aircraft Type Distribution Analysis
 - Flight Altitude Analysis
 - Aircraft Activity by Time of Day
+-         ## Analysis #1 Completed
+
+Dataset Size:
+- 1,705 aircraft observations
+
+Method:
+- ADS-B telemetry records were grouped by local observation hour.
+- Two approaches were used:
+  - Total observations
+  - Unique aircraft (HEX) observations
+
+Preliminary Findings:
+- Aircraft activity peaked between 18:00 and 20:00.
+- The highest number of unique aircraft was observed during the 18:00 hour.
+- Evening traffic appears significantly higher than other observed periods.
+
+Status:
+✅ Completed
+
 - Traffic Density Visualization
 - Aircraft Route Analysis
 - Python-Based Aviation Analytics
