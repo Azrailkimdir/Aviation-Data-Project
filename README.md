@@ -6,7 +6,7 @@ The project combines aviation, programming, software-defined radio (SDR), hardwa
 
 ---
 
-## Project Vision
+# Project Vision
 
 This project began with a simple question:
 
@@ -177,7 +177,7 @@ RTL-SDR Blog V3
 
 ✅ Continuous aircraft telemetry archiving established
 
-✅ Preliminary analysis phase in progress
+✅ Preliminary analysis in progress
 
 ---
 
@@ -241,9 +241,30 @@ RTL-SDR Blog V3
 
 ---
 
-# Phase 2 – Aircraft Traffic Analysis Around Ankara 🚧
+# Project Roadmap
 
-The second phase of the project focuses on transforming collected aircraft telemetry into meaningful aviation insights.
+The Aviation Data Project is designed as a multi-phase aviation data and analytics initiative.
+
+---
+
+## Phase 1 – ADS-B Ground Station ✅
+
+Completed
+
+- RTL-SDR Blog V3 configured
+- ADS-B message reception established
+- Aircraft telemetry decoding operational
+- Historical data logging active
+- OpenSky Network integration operational
+- Real-time radar dashboard developed
+
+---
+
+## Phase 2 – Aircraft Traffic Analysis Around Ankara 🚧
+
+Current Phase
+
+The goal of this phase is to transform collected ADS-B telemetry into meaningful aviation insights.
 
 ### Planned Areas of Analysis
 
@@ -259,7 +280,48 @@ The second phase of the project focuses on transforming collected aircraft telem
 
 ---
 
-# Why This Project Matters
+## Phase 3 – Flight Corridor Analysis 
+
+Future Phase
+
+### Research Questions
+
+- What are the most commonly used flight corridors around Ankara?
+- Which directions account for the highest traffic volume?
+- How do arrival and departure routes differ?
+- Can ADS-B data reveal common air traffic patterns?
+
+---
+
+## Phase 4 – OpenSky Contribution Metrics 
+
+Future Phase
+
+### Research Questions
+
+- How much data is contributed to OpenSky Network?
+- What aircraft types are observed most frequently?
+- How consistent is station uptime?
+- How can open aviation data support scientific research?
+
+---
+
+## Phase 5 – Aviation Analytics 
+
+Future Phase
+
+### Planned Exploration Areas
+
+- Historical trend analysis
+- Aircraft type recognition
+- Data visualization dashboards
+- Traffic forecasting
+- Aviation data reporting
+- Advanced telemetry analytics
+
+---
+
+## Why This Project Matters
 
 This project goes beyond simple aircraft tracking.
 
@@ -269,7 +331,7 @@ By collecting ADS-B telemetry and contributing data to the OpenSky Network, the 
 
 ---
 
-# Educational Value
+## Educational Value
 
 This project combines:
 
@@ -287,7 +349,15 @@ while providing hands-on experience with real-world aircraft data and modern fli
 
 ---
 
-# Repository Structure
+## Long-Term Goal
+
+The long-term goal of this project is to collect, analyze, and visualize real-world aviation data while developing a better understanding of aircraft operations, flight systems, air traffic activity, and aviation analytics.
+
+The project combines aviation, programming, data analysis, hardware systems, and open aviation data to build a practical aerospace-focused learning experience.
+
+---
+
+## Repository Structure
 
 ```text
 data/
@@ -309,11 +379,17 @@ images/
 ├── opensky-sensors.png
 ├── docker-services.png
 └── radar-dashboard.png
+
+reports/
+├── Phase-2-Aircraft-Traffic-Analysis-Around-Ankara.md
+├── Phase-3-Flight-Corridor-Analysis.md
+├── Phase-4-OpenSky-Contribution-Metrics.md
+└── Phase-5-Aviation-Analytics.md
 ```
 
 ---
 
-# Future Development
+## Future Development
 
 Planned future improvements include:
 
@@ -328,10 +404,10 @@ Planned future improvements include:
 
 ---
 
-# Author
+## Author
 
-## Sarp Akar
+### Sarp Akar
 
 Sept 2026
 
-Always Curious. Always Learning.
+**Always Curious. Always Learning.**
