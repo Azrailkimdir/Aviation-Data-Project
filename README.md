@@ -598,7 +598,6 @@ This stage combines the results of previous analyses into a unified aviation ana
 
 ### Dashboard Visualization
 
-../visualizations/aviation_dashboard_advanced.png
 ![Aviation analytics Dashboard](visualizations/aviation_dashboard_advanced.png)
 
 ---
