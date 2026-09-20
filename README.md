@@ -489,7 +489,7 @@ What altitude ranges are most frequently observed around Ankara?
 
 ### Visualization
 
-#### Top 10 Aircraft Operators Around Ankara
+#### Flight Altitude Distribution
 
 ![Altitude Distribution](visualizations/altitude_distribution.png)
 
@@ -746,6 +746,8 @@ The project combines aviation, programming, data analysis, hardware systems, and
 
 ## Repository Structure
 
+## Repository Structure
+
 ```text
 data/
 ├── raw/
@@ -773,6 +775,7 @@ reports/
 ├── Phase-4-OpenSky-Contribution-Metrics.md
 └── Phase-5-Aviation-Analytics.md
 ```
+
 
 ---
 
