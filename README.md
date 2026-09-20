@@ -377,21 +377,89 @@ As additional telemetry data continues to be collected, future analyses will det
 
 ---
 
-## Next Analysis
+# Analysis #2 Completed
 
-### Aircraft Type Distribution Analysis
+## Aircraft Operator Distribution Analysis
 
-Objectives:
+### Research Question
 
-- Identify the most frequently observed airlines
-- Analyze airline distribution around Ankara
-- Compare regional and international traffic activity
-- Create airline frequency visualizations
-- Identify the most commonly observed aircraft operators
+Which aircraft operators appear most frequently around Ankara?
 
-Status:
+---
 
-🎯 In Progress
+### Dataset
+
+- Historical ADS-B observations collected through a local RTL-SDR ground station
+- Collection period: approximately 1.5–2 weeks
+- Source: readsb + OpenSky integrated receiver
+
+---
+
+### Methodology
+
+Aircraft were grouped according to operator prefixes extracted from ADS-B callsigns.
+
+Examples:
+
+- THY → Turkish Airlines
+- PGT → Pegasus Airlines
+- QTR → Qatar Airways
+- UAE → Emirates
+- ETD → Etihad Airways
+
+Observations were aggregated by operator.
+
+---
+
+### Results
+
+| Operator | Observations |
+|-----------|-----------:|
+| THY | 1255 |
+| TKJ | 1189 |
+| PGT | 619 |
+| QTR | 378 |
+| UAE | 252 |
+| FDB | 87 |
+| ETD | 77 |
+| SVA | 64 |
+| KAC | 45 |
+| ABY | 39 |
+
+---
+
+### Visualization
+
+Top 10 Aircraft Operators Around Ankara
+
+![Operator Distribution Chart](../visualizations/top_operators_ankara.png)
+
+---
+
+### Key Findings
+
+- Turkish Airlines (THY) was the most frequently observed operator.
+- Turkish Air Force (TKJ) flights represented a significant share of the observed traffic.
+- Pegasus Airlines (PGT) ranked as the third most frequently observed operator.
+- Qatar Airways (QTR) and Emirates (UAE) were the most frequently observed international operators.
+- The collected dataset reflects a mixture of domestic, military, regional, and international traffic around Ankara.
+
+---
+
+### Discussion
+
+The results indicate that aircraft activity around Ankara is dominated by Turkish operators, particularly Turkish Airlines and Turkish Air Force flights.
+
+International traffic is primarily represented by Gulf-region airlines including Qatar Airways, Emirates, Etihad Airways, Flydubai, and Saudia.
+
+This distribution reflects Ankara's role as both a major domestic aviation center and an important transit point for regional international traffic.
+
+---
+
+### Status
+
+✅ Completed
+
 ---
 
 ## Phase 3 – Flight Corridor Analysis 
