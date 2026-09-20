@@ -363,11 +363,11 @@ As additional telemetry data continues to be collected, future analyses will det
 
 #### Aircraft Activity by Time of Day
 
-![Aircraft Activity by Time of Day](../visualizations/aircraft_activity_by_hour.png)
+![Aircraft Activity by Time of Day](aircraft_activity_by_hour.png)
 
 #### Unique Aircraft by Hour
 
-![Unique Aircraft by Hour](../visualizations/unique_aircraft_by_hour.png)
+![Unique Aircraft by Hour](unique_aircraft_by_hour.png)
 
 ---
 
