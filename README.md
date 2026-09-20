@@ -273,9 +273,9 @@ The goal of this phase is to transform collected ADS-B telemetry into meaningful
 | Analysis | Status |
 |-----------|-----------|
 | Aircraft Activity by Time of Day | ✅ Completed |
-| Aircraft Type Distribution Analysis | 🎯 Next Analysis |
-| Flight Altitude Analysis | ⏳ Planned |
-| Traffic Density Visualization | ⏳ Planned |
+| Aircraft Type Distribution Analysis | ✅ Completed |
+| Flight Altitude Analysis | ✅ Completed |
+| Traffic Density Visualization | 🎯 Next Analysis  |
 | Aircraft Route Analysis | ⏳ Planned |
 | Python-Based Aviation Analytics | ⏳ Planned |
 | ADS-B Data Visualization Dashboards | ⏳ Planned |
@@ -462,17 +462,64 @@ This distribution reflects Ankara's role as both a major domestic aviation cente
 
 ---
 
-## Phase 3 – Flight Corridor Analysis 
+# Analysis #3 – Flight Altitude Analysis
 
-Future Phase
+## Research Question
 
-### Research Questions
+What altitude ranges are most frequently observed around Ankara?
 
-- What are the most commonly used flight corridors around Ankara?
-- Which directions account for the highest traffic volume?
-- How do arrival and departure routes differ?
-- Can ADS-B data reveal common air traffic patterns?
+---
 
+### Dataset
+
+- 3,959 altitude observations
+- Historical ADS-B telemetry collected through a local RTL-SDR ground station
+- Collection period: approximately 1.5–2 weeks
+
+---
+
+### Results
+
+| Metric | Value |
+|----------|----------:|
+| Total Observations | 3,959 |
+| Average Altitude | 27,806 ft |
+| Minimum Altitude | 3,150 ft |
+| Maximum Altitude | 45,000 ft |
+
+### Visualization
+
+#### Top 10 Aircraft Operators Around Ankara
+
+![Altitude Distribution](visualizations/altitude_distribution.png)
+
+---
+
+### Key Findings
+
+- The average observed altitude was 27,806 ft.
+- The lowest recorded altitude was 3,150 ft.
+- The highest recorded altitude was 45,000 ft.
+- Two major altitude clusters were identified.
+- The first cluster was concentrated between 5,000 and 10,000 ft.
+- The second and dominant cluster was concentrated between 33,000 and 39,000 ft.
+- Most observations corresponded to high-altitude cruise traffic crossing the Ankara region.
+
+---
+
+### Discussion
+
+The altitude distribution indicates that the majority of observed aircraft were operating at cruise altitudes typical of commercial en-route traffic.
+
+A smaller concentration of observations was identified below 10,000 ft, representing aircraft during climb, descent, or local operations.
+
+These findings suggest that Ankara's airspace is heavily influenced by both domestic air traffic and international transit routes crossing central Türkiye.
+
+---
+
+### Status
+
+✅ Completed
 ---
 
 ## Phase 4 – OpenSky Contribution Metrics 
