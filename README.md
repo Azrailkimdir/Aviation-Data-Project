@@ -701,11 +701,72 @@ Results indicate that:
 
 ---
 
-## Next Phase
-
 ### Aircraft Route Analysis
 
-The next stage will focus on identifying common flight corridors, route concentration patterns, and frequently used air traffic pathways around Ankara using ADS-B position data.
+# Analysis #5 – Aircraft Route Analysis
+
+## Research Question
+
+Which flight corridors are most frequently used around Ankara?
+
+---
+
+### Dataset
+
+- 4,588 ADS-B observations
+- 2,651 observations with valid coordinates
+- Historical telemetry collected through a local RTL-SDR ground station
+
+---
+
+### Methodology
+
+Aircraft position data were aggregated and visualized using density-based spatial analysis.
+
+A hexagonal density map was generated to identify recurring flight corridors and heavily utilized air routes around Ankara.
+
+---
+
+### Visualization
+
+#### Flight Corridor Density Around Ankara
+
+![Flight Corridor Density Around Ankara](visualizations/flight_corridors_ankara.png)
+
+---
+
+### Key Findings
+
+- Aircraft traffic around Ankara is not randomly distributed.
+- Several clearly defined flight corridors can be observed across the monitored airspace.
+- The highest traffic density was recorded near the center of the observation area.
+- Multiple routes converge near Ankara before continuing toward different directions.
+- The most frequently used corridor extends toward the southeast of the monitored region.
+- Some parts of the airspace contain significantly more traffic than surrounding areas, indicating repeated use of established air routes.
+
+---
+
+### Plain Language Summary
+
+The analysis shows that aircraft around Ankara do not fly randomly across the sky.
+
+Instead, most aircraft follow a small number of well-defined routes. Several of these routes intersect near the Ankara region, creating areas of higher traffic density.
+
+The results indicate that Ankara is located beneath frequently used flight paths connecting different parts of Türkiye and neighboring regions.
+
+---
+
+### Discussion
+
+The corridor density map reveals a network of recurring flight paths crossing Central Türkiye.
+
+Combined with the altitude and traffic density analyses, the results suggest that Ankara is influenced by both domestic air traffic and high-altitude international transit traffic. The identified corridors represent the most frequently observed pathways within the collected ADS-B dataset.
+
+---
+
+### Status
+
+✅ Completed
 ---
 
 ## Why This Project Matters
