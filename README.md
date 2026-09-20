@@ -522,16 +522,65 @@ These findings suggest that Ankara's airspace is heavily influenced by both dome
 ✅ Completed
 ---
 
-## Phase 4 – OpenSky Contribution Metrics 
+# Analysis #4 – Traffic Density Visualization
 
-Future Phase
+## Research Question
 
-### Research Questions
+Where is aircraft traffic concentrated around Ankara?
 
-- How much data is contributed to OpenSky Network?
-- What aircraft types are observed most frequently?
-- How consistent is station uptime?
-- How can open aviation data support scientific research?
+---
+
+### Dataset
+
+- 4,588 ADS-B observations
+- 2,651 observations with valid coordinates
+- Historical telemetry collected through a local RTL-SDR ground station
+
+---
+
+### Results
+
+| Metric | Value |
+|----------|----------:|
+| Total Observations | 4,588 |
+| Coordinate Observations | 2,651 |
+| Latitude Range | 39.33° – 40.73° |
+| Longitude Range | 31.63° – 33.82° |
+
+---
+
+### Visualization
+
+#### Aircraft Traffic Density Around Ankara
+
+![Traffic Density Map](visualizations/traffic_density_ankara.png)
+
+---
+
+### Key Findings
+
+- Aircraft activity is concentrated along several recurring flight corridors.
+- The highest observation density was identified in the central observation area around Ankara.
+- Multiple traffic clusters suggest repeated use of specific routes.
+- The observed pattern reflects both domestic and international transit traffic.
+
+---
+
+### Discussion
+
+The density map indicates that aircraft movements around Ankara are not uniformly distributed.
+
+Instead, traffic is concentrated along several major corridors that are repeatedly used by aircraft crossing the region.
+
+The highest-density cells correspond to the most frequently observed flight paths within the collected ADS-B dataset.
+
+These findings support previous analyses indicating that Ankara acts as both a domestic aviation hub and a significant transit point for regional air traffic.
+
+---
+
+### Status
+
+✅ Completed
 
 ---
 
