@@ -432,7 +432,7 @@ Observations were aggregated by operator.
 
 #### Top 10 Aircraft Operators Around Ankara
 
-![Top Operators Ankara](../visualizations/top_operators_ankara.png)
+![Top Operators Ankara](visualizations/top_operators_ankara.png)
 
 ---
 
