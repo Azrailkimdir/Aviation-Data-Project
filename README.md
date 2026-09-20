@@ -272,17 +272,15 @@ The goal of this phase is to transform collected ADS-B telemetry into meaningful
 
 The goal of this phase is to transform collected ADS-B telemetry into meaningful aviation insights.
 
-## Planned Areas of Analysis
+✅ Analysis #1 Aircraft Activity by Time of Day
 
-- Aircraft Traffic Analysis Around Ankara
-- Aircraft Type Distribution Analysis
-- Flight Altitude Analysis
-- Aircraft Activity by Time of Day
-- Traffic Density Visualization
-- Aircraft Route Analysis
-- Python-Based Aviation Analytics
-- ADS-B Data Visualization Dashboards
-- OpenSky Network Contribution Metrics
+🎯 Analysis #2 Aircraft Type Distribution Analysis
+
+⏳ Analysis #3 Flight Altitude Analysis
+
+⏳ Analysis #4 Traffic Density Visualization
+
+⏳ Analysis #5 Aircraft Route Analysis
 
 ---
 
