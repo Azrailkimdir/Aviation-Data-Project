@@ -177,7 +177,7 @@ RTL-SDR Blog V3
 
 ✅ Continuous aircraft telemetry archiving established
 
-✅ Preliminary analysis in progress
+✅ Advanced aviation analytics pipeline established
 
 ---
 
@@ -693,11 +693,11 @@ Results indicate that:
 
 ✅ Aviation Analytics Dashboard
 
-🚧 Aircraft Route Analytics
+✅ Aircraft Route Analytics
 
-🚧 OpenSky Contribution Metrics
+✅ OpenSky Contribution Metrics
 
-🚧 Advanced Predictive Analytics
+✅ Advanced Predictive Analytics
 
 ---
 
@@ -769,6 +769,471 @@ Combined with the altitude and traffic density analyses, the results suggest tha
 ✅ Completed
 ---
 
+# Analysis #6 – OpenSky Network Contribution Metrics
+
+## Research Question
+
+How effectively does the ADS-B ground station contribute data to the OpenSky Network?
+
+---
+
+### Dataset
+
+Source: OpenSky Network Sensor Statistics
+
+Sensor Serial Number:
+
+-1407994849
+
+---
+
+### Results
+
+| Metric | Value |
+|----------|----------:|
+| 24-Hour Activity | 52.9% |
+| Maximum Range | 91.1 km |
+| Coverage Points | 133 |
+| Current Message Rate | 0/min* |
+
+*Measured at the time the statistics page was captured.
+
+---
+
+### Key Findings
+
+- The ADS-B receiver successfully contributes data to the OpenSky Network.
+- During the previous 24-hour period, the receiver was active for 52.9% of the time.
+- The receiver achieved a maximum reception range of 91.1 km.
+- A total of 133 coverage points were recorded.
+- Coverage extends across Ankara and surrounding regions.
+- The coverage map indicates successful reception of aircraft from multiple directions around the city.
+
+---
+
+### Plain Language Summary
+
+The OpenSky statistics show that the ground station is actively contributing aircraft tracking data to the OpenSky Network.
+
+During the measured period, aircraft were detected up to 91.1 km away from the receiver. The coverage map demonstrates that the station is capable of receiving aircraft from multiple directions around Ankara, contributing useful surveillance data to the global OpenSky aviation database.
+
+---
+
+### Discussion
+
+The recorded coverage area confirms that the ADS-B station is functioning as a useful regional receiver. Although the receiver was offline at the time the statistics page was captured, historical activity and range metrics demonstrate successful participation in the OpenSky Network.
+
+As observation time increases and receiver uptime improves, future contribution metrics are expected to provide broader coverage and larger data volumes.
+
+---
+
+### Status
+
+✅ Completed
+
+# Phase 6 – Trend and Predictive Aviation Analytics
+
+## Objective
+
+Phase 6 focuses on identifying traffic trends, operational patterns, and future predictive opportunities using historical ADS-B telemetry collected through the ADS-B ground station.
+
+Unlike previous phases that focused on descriptive analysis, this phase explores how aviation activity changes over time and investigates whether future traffic behavior can be estimated from historical observations.
+
+---
+
+## Analysis Roadmap
+
+| Analysis | Status |
+|-----------|-----------|
+| Traffic Growth Analysis | ✅ Completed |
+| Daily Traffic Analytics | ✅ Completed  |
+| Weekly Pattern Analysis | ✅ Completed |
+| Operator Trend Analysis | ✅ Completed  |
+| Traffic Forecasting Experiments | ✅ Completed |
+
+---
+
+# Analysis #6.1 – Traffic Growth Analysis
+
+## Research Question
+
+How does aircraft activity change over time?
+
+---
+
+### Dataset
+
+- Historical ADS-B telemetry
+- 4,588 aircraft observations
+- Local RTL-SDR ADS-B ground station
+
+---
+
+### Results
+
+| Date | Observations |
+|------------|------------:|
+| 2026-09-17 | 1,106 |
+| 2026-09-18 | 2,504 |
+| 2026-09-19 | 978 |
+
+---
+
+### Visualization
+
+#### Aircraft Observation Growth Over Time
+
+visualizations/traffic_growth_analysis.png
+
+---
+
+### Key Findings
+
+- A total of 4,588 aircraft observations were analyzed.
+- The highest daily observation count occurred on 18 September 2026.
+- Daily observation counts varied significantly between collection days.
+- Current data volume is sufficient for baseline trend analysis but not yet sufficient for reliable long-term forecasting.
+
+---
+
+### Discussion
+
+The analysis reveals noticeable variation in daily observation counts.
+
+At this stage, changes in observation volume may be influenced by receiver uptime, collection duration, and aircraft traffic activity. Additional weeks of telemetry collection will be 
+## Status
+
+✅ Completed
+
+# Analysis #6.2 – Daily Unique Aircraft Trend
+
+## Research Question
+
+How many different aircraft are observed each day?
+
+---
+
+### Dataset
+
+- Historical ADS-B telemetry
+- 4,588 aircraft observations
+- 433 unique aircraft
+- Local RTL-SDR ADS-B ground station
+
+---
+
+### Results
+
+| Date | Unique Aircraft |
+|------------|------------:|
+| 2026-09-17 | 136 |
+| 2026-09-18 | 244 |
+| 2026-09-19 | 153 |
+
+---
+
+### Visualization
+
+#### Daily Unique Aircraft Observed
+
+visualizations/daily_unique_aircraft.png
+
+
+---
+
+### Key Findings
+
+- A total of 433 unique aircraft were observed during the study period.
+- The highest number of unique aircraft was observed on 18 September 2026.
+- A total of 244 different aircraft were recorded on the busiest day.
+- Daily aircraft diversity remained consistently high throughout the observation period.
+- The dataset demonstrates substantial variation in aircraft activity between observation days.
+
+---
+
+### Plain Language Summary
+
+This analysis focuses on the number of different aircraft observed each day rather than the total number of ADS-B messages received.
+
+The busiest day was 18 September 2026, when 244 unique aircraft were detected. Even on lower-activity days, more than 130 different aircraft were observed.
+
+These results suggest that the Ankara region experiences a diverse mix of aircraft activity on a daily basis and serves as an active part of Türkiye's air traffic network.
+
+---
+
+### Discussion
+
+Daily observation counts can be affected by receiver uptime and collection duration. However, unique aircraft counts provide a more reliable indicator of actual traffic diversity.
+
+As the dataset grows over additional weeks and months, future analyses will be able to identify recurring daily and weekly traffic patterns and evaluate long-term traffic evolution.
+
+---
+
+### Status
+
+✅ Completed
+
+# Analysis #6.3 – Weekly Pattern Analysis
+
+## Research Question
+
+Are there recurring weekly patterns in aircraft activity around Ankara?
+
+---
+
+### Dataset
+
+- Historical ADS-B telemetry
+- 4,588 aircraft observations
+- Local RTL-SDR ADS-B ground station
+- Current dataset covers three observation days
+
+---
+
+### Results
+
+| Weekday | Observations |
+|----------|----------:|
+| Thursday | 1,106 |
+| Friday | 2,504 |
+| Saturday | 978 |
+
+---
+
+### Visualization
+
+#### Aircraft Observations by Weekday
+
+visualizations/weekly_pattern_analysis.png
+
+---
+
+### Key Findings
+
+- Friday recorded the highest number of aircraft observations.
+- Thursday showed moderate traffic activity.
+- Saturday recorded fewer observations than Friday.
+- Current results are based on a limited observation period and should be considered preliminary.
+
+---
+
+### Plain Language Summary
+
+The current dataset suggests that Friday was the busiest observed day, with more than twice as many aircraft observations as Thursday and Saturday.
+
+However, the dataset currently contains observations from only three days. Additional weeks of data collection will be required before reliable weekly traffic patterns can be identified.
+
+---
+
+### Discussion
+
+This analysis establishes the foundation for future weekday traffic studies.
+
+As additional ADS-B telemetry is collected, the dataset will support more comprehensive comparisons between weekdays and weekends, helping identify recurring aviation activity patterns around Ankara.
+
+---
+
+### Status
+
+✅ Completed (Preliminary)
+
+# Analysis #6.3 – Weekly Pattern Analysis
+
+## Research Question
+
+Are there recurring weekly patterns in aircraft activity around Ankara?
+
+---
+
+### Dataset
+
+- Historical ADS-B telemetry
+- 4,588 aircraft observations
+- Local RTL-SDR ADS-B ground station
+- Current dataset covers three observation days
+
+---
+
+### Results
+
+| Weekday | Observations |
+|----------|----------:|
+| Thursday | 1,106 |
+| Friday | 2,504 |
+| Saturday | 978 |
+
+---
+
+### Visualization
+
+#### Aircraft Observations by Weekday
+
+visualizations/weekly_pattern_analysis.png
+
+---
+
+### Key Findings
+
+- Friday recorded the highest number of aircraft observations.
+- Aircraft activity on Friday was more than double the recorded activity on Thursday.
+- Saturday showed lower activity compared to Friday.
+- The current dataset does not yet contain enough data to identify reliable long-term weekly patterns.
+
+---
+
+### Plain Language Summary
+
+The current dataset suggests that Friday was the busiest observed day, with 2,504 aircraft observations recorded during the collection period.
+
+Thursday and Saturday showed lower activity levels. However, because the dataset currently covers only three days, these results should be considered preliminary rather than a confirmed weekly traffic pattern.
+
+Additional weeks of ADS-B data collection will be required before reliable weekday and weekend traffic comparisons can be performed.
+
+---
+
+### Discussion
+
+This analysis establishes the foundation for future weekly traffic studies.
+
+As the historical dataset grows, it will become possible to identify recurring patterns, compare weekday and weekend traffic levels, and determine whether specific days consistently experience higher aircraft activity around Ankara.
+
+---
+
+### Status
+
+✅ Completed (Preliminary)
+
+# Analysis #6.4 – Operator Trend Analysis
+
+## Research Question
+
+How does operator activity change over time?
+
+---
+
+### Dataset
+
+- Historical ADS-B telemetry
+- 4,588 aircraft observations
+- Local RTL-SDR ADS-B ground station
+- Analysis based on the five most frequently observed operators
+
+---
+
+### Results
+
+| Date | THY | TKJ | PGT | QTR | UAE |
+|------------|----:|----:|----:|----:|----:|
+| 2026-09-17 | 311 | 269 | 190 | 81 | 98 |
+| 2026-09-18 | 622 | 704 | 372 | 193 | 141 |
+| 2026-09-19 | 322 | 216 | 57 | 104 | 13 |
+
+---
+
+### Visualization
+
+#### Top Operator Activity Over Time
+
+!isualizations/operator_trend_analysis.png
+
+---
+
+### Key Findings
+
+- THY and TKJ consistently dominated the observed traffic.
+- TKJ recorded the highest single-day activity with 704 observations on 18 September 2026.
+- THY remained the most stable operator throughout the observation period.
+- PGT activity peaked on 18 September before declining significantly on 19 September.
+- QTR activity remained relatively stable compared to the other operators.
+- UAE activity decreased substantially on 19 September.
+
+---
+
+### Plain Language Summary
+
+The analysis shows that Turkish Airlines (THY) and Turkish Air Force (TKJ) traffic dominated the observed airspace throughout the collection period.
+
+Both operators experienced their highest activity on 18 September 2026. Pegasus Airlines (PGT) also showed strong activity on that day, while Qatar Airways (QTR) maintained a more consistent presence across all observation days.
+
+Overall, the data suggests that Ankara's airspace is strongly influenced by a combination of commercial airline traffic and military flight activity.
+
+---
+
+### Discussion
+
+Operator activity varied noticeably between observation days.
+
+The highest levels of activity were recorded on 18 September 2026 across nearly all major operators, suggesting either increased traffic volume or longer observation coverage during.
+
+# Analysis #6.5 – Traffic Forecasting Experiment
+
+## Research Question
+
+Can future aircraft activity be estimated using historical ADS-B observations?
+
+---
+
+### Dataset
+
+- Historical ADS-B telemetry
+- 4,588 aircraft observations
+- Local RTL-SDR ADS-B ground station
+- Three-day observation period
+
+---
+
+### Results
+
+| Date | Observations |
+|------------|------------:|
+| 2026-09-17 | 1,106 |
+| 2026-09-18 | 2,504 |
+| 2026-09-19 | 978 |
+| Forecast | 1,401 |
+
+---
+
+### Visualization
+
+#### Aircraft Traffic Forecast Experiment
+
+```markdown
+visualizations/traffic_forecast_experiment.png
+```
+
+---
+
+### Key Findings
+
+- A simple trend model was used to estimate future aircraft activity.
+- Based on the available historical observations, the model predicts approximately 1,401 aircraft observations for the next observation day.
+- The forecast falls between the highest and lowest observed traffic levels.
+- Current results should be considered experimental due to the limited size of the dataset.
+
+---
+
+### Plain Language Summary
+
+Using the available ADS-B observation history, a simple forecasting model was created to estimate future traffic levels.
+
+The model predicts approximately 1,401 aircraft observations for the next observation day. While this estimate should not be considered operationally reliable, it demonstrates how historical ADS-B data can be used as a foundation for future predictive aviation analytics.
+
+---
+
+### Discussion
+
+The current dataset contains only three days of observations, which is insufficient for robust forecasting.
+
+However, this analysis establishes the foundation for future predictive models. As additional weeks and months of telemetry data are collected, more sophisticated forecasting techniques can be applied to identify seasonal trends, recurring traffic patterns, and long-term changes in air traffic activity.
+
+---
+
+### Status
+
+✅ Completed
+
+---
+
 ## Why This Project Matters
 
 This project goes beyond simple aircraft tracking.
@@ -804,8 +1269,6 @@ The long-term goal of this project is to collect, analyze, and visualize real-wo
 The project combines aviation, programming, data analysis, hardware systems, and open aviation data to build a practical aerospace-focused learning experience.
 
 ---
-
-## Repository Structure
 
 ## Repository Structure
 
