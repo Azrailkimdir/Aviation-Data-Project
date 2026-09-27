@@ -1207,7 +1207,7 @@ The project combines aviation, programming, data analysis, hardware systems, and
 
 ---
 
-### Repository Structure
+## Repository Structure
 
 ```text
 dashboard/
@@ -1237,29 +1237,6 @@ visualizations/
 ├── weekly_pattern_analysis.png
 ├── operator_trend_analysis.png
 └── traffic_forecast_experiment.png
-
-Analysis Scripts
-├── analysis_altitude_distribution.py
-├── analysis_traffic_density.py
-├── analysis_flight_corridors.py
-├── analysis_traffic_growth.py
-├── analysis_daily_unique_aircraft.py
-├── analysis_weekly_patterns.py
-├── analysis_operator_trends.py
-├── analysis_traffic_forecast.py
-├── aviation_dashboard.py
-└── aviation_dashboard_advanced.py
-
-Core Services
-├── log_aircraft.py
-└── trail_generator.py
-
-images/
-├── ground-station-setup.jpg
-├── opensky-account.png
-├── opensky-sensors.png
-├── docker-services.png
-└── radar-dashboard.png
 ```
 
 ---
