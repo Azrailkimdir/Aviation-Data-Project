@@ -262,8 +262,6 @@ Completed
 
 # Phase 2 – Aircraft Traffic Analysis Around Ankara
 
-## Current Phase
-
 The goal of this phase is to transform collected ADS-B telemetry into meaningful aviation insights through analysis, visualization, and research.
 
 ---
@@ -283,7 +281,7 @@ The goal of this phase is to transform collected ADS-B telemetry into meaningful
 
 ---
 
-# Analysis #1 Completed
+# Analysis #1 
 
 ## Aircraft Activity by Time of Day
 
