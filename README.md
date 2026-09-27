@@ -894,11 +894,14 @@ How does aircraft activity change over time?
 
 ---
 
-### Discussion
+#### Discussion
 
 The analysis reveals noticeable variation in daily observation counts.
 
-At this stage, changes in observation volume may be influenced by receiver uptime, collection duration, and aircraft traffic activity. Additional weeks of telemetry collection will be 
+At this stage, changes in observation volume may be influenced by receiver uptime, collection duration, and aircraft traffic activity. Additional weeks of telemetry collection will be required before reliable conclusions can be drawn regarding long-term traffic growth.
+
+The current analysis establishes an initial baseline for monitoring future traffic trends.
+
 ## Status
 
 ✅ Completed
@@ -970,70 +973,6 @@ As the dataset grows over additional weeks and months, future analyses will be a
 ### Status
 
 ✅ Completed
-
-# Analysis #6.3 – Weekly Pattern Analysis
-
-## Research Question
-
-Are there recurring weekly patterns in aircraft activity around Ankara?
-
----
-
-### Dataset
-
-- Historical ADS-B telemetry
-- 4,588 aircraft observations
-- Local RTL-SDR ADS-B ground station
-- Current dataset covers three observation days
-
----
-
-### Results
-
-| Weekday | Observations |
-|----------|----------:|
-| Thursday | 1,106 |
-| Friday | 2,504 |
-| Saturday | 978 |
-
----
-
-### Visualization
-
-#### Aircraft Observations by Weekday
-
-![Aircraft Observations by Weekday](visualizations/weekly_pattern_analysis.png)
-
----
-
-### Key Findings
-
-- Friday recorded the highest number of aircraft observations.
-- Thursday showed moderate traffic activity.
-- Saturday recorded fewer observations than Friday.
-- Current results are based on a limited observation period and should be considered preliminary.
-
----
-
-### Plain Language Summary
-
-The current dataset suggests that Friday was the busiest observed day, with more than twice as many aircraft observations as Thursday and Saturday.
-
-However, the dataset currently contains observations from only three days. Additional weeks of data collection will be required before reliable weekly traffic patterns can be identified.
-
----
-
-### Discussion
-
-This analysis establishes the foundation for future weekday traffic studies.
-
-As additional ADS-B telemetry is collected, the dataset will support more comprehensive comparisons between weekdays and weekends, helping identify recurring aviation activity patterns around Ankara.
-
----
-
-### Status
-
-✅ Completed (Preliminary)
 
 # Analysis #6.3 – Weekly Pattern Analysis
 
@@ -1157,11 +1096,13 @@ Overall, the data suggests that Ankara's airspace is strongly influenced by a co
 
 ---
 
-### Discussion
+#### Discussion
 
 Operator activity varied noticeably between observation days.
 
-The highest levels of activity were recorded on 18 September 2026 across nearly all major operators, suggesting either increased traffic volume or longer observation coverage during.
+The highest levels of activity were recorded on 18 September 2026 across nearly all major operators, suggesting either increased traffic volume or more extensive observation coverage on that day.
+
+As the historical dataset expands, future analyses will be able to determine whether these patterns represent genuine recurring trends or short-term fluctuations.
 
 # Analysis #6.5 – Traffic Forecasting Experiment
 
@@ -1266,36 +1207,48 @@ The project combines aviation, programming, data analysis, hardware systems, and
 
 ---
 
-## Repository Structure
+### Repository Structure
 
 ```text
 data/
 ├── raw/
 ├── processed/
+├── history/
 └── archive/
 
-scripts/
-
 dashboard/
+├── aircraft_map.html
+└── index.html
 
 visualizations/
+├── aircraft_activity_by_hour.png
+├── unique_aircraft_by_hour.png
+├── top_operators_ankara.png
+├── altitude_distribution.png
+├── traffic_density_ankara.png
+├── flight_corridors_ankara.png
+├── aviation_dashboard_advanced.png
+├── traffic_growth_analysis.png
+├── daily_unique_aircraft.png
+├── weekly_pattern_analysis.png
+├── operator_trend_analysis.png
+└── traffic_forecast_experiment.png
 
-docs/
-
-images/
-├── ground-station-setup.jpg
-├── opensky-account.png
-├── opensky-sensors.png
-├── docker-services.png
-└── radar-dashboard.png
+analysis/
+├── analysis_altitude_distribution.py
+├── analysis_traffic_density.py
+├── analysis_flight_corridors.py
+├── analysis_traffic_growth.py
+├── analysis_daily_unique_aircraft.py
+├── analysis_weekly_patterns.py
+├── analysis_operator_trends.py
+├── analysis_traffic_forecast.py
+├── aviation_dashboard.py
+└── aviation_dashboard_advanced.py
 
 reports/
-├── Phase-2-Aircraft-Traffic-Analysis-Around-Ankara.md
-├── Phase-3-Flight-Corridor-Analysis.md
-├── Phase-4-OpenSky-Contribution-Metrics.md
-└── Phase-5-Aviation-Analytics.md
+└── README.md
 ```
-
 
 ---
 
