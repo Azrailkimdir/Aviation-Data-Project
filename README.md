@@ -881,7 +881,7 @@ How does aircraft activity change over time?
 
 #### Aircraft Observation Growth Over Time
 
-visualizations/traffic_growth_analysis.png
+![Aircraft Observation Growth Over Time](visualizations/traffic_growth_analysis.png)
 
 ---
 
@@ -934,7 +934,7 @@ How many different aircraft are observed each day?
 
 #### Daily Unique Aircraft Observed
 
-visualizations/daily_unique_aircraft.png
+![Daily Unique Aircraft Observed](visualizations/daily_unique_aircraft.png)
 
 
 ---
@@ -1002,7 +1002,7 @@ Are there recurring weekly patterns in aircraft activity around Ankara?
 
 #### Aircraft Observations by Weekday
 
-visualizations/weekly_pattern_analysis.png
+![Aircraft Observations by Weekday](visualizations/weekly_pattern_analysis.png)
 
 ---
 
@@ -1066,7 +1066,7 @@ Are there recurring weekly patterns in aircraft activity around Ankara?
 
 #### Aircraft Observations by Weekday
 
-visualizations/weekly_pattern_analysis.png
+![Aircraft Observations by Weekday](visualizations/weekly_pattern_analysis.png)
 
 ---
 
@@ -1132,7 +1132,7 @@ How does operator activity change over time?
 
 #### Top Operator Activity Over Time
 
-!isualizations/operator_trend_analysis.png
+![Top Operator Activity Over Time](visualizations/operator_trend_analysis.png)
 
 ---
 
@@ -1195,9 +1195,7 @@ Can future aircraft activity be estimated using historical ADS-B observations?
 
 #### Aircraft Traffic Forecast Experiment
 
-```markdown
-visualizations/traffic_forecast_experiment.png
-```
+![Aircraft Traffic Forecast Experiment](visualizations/traffic_forecast_experiment.png)
 
 ---
 
