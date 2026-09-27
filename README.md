@@ -1210,15 +1210,19 @@ The project combines aviation, programming, data analysis, hardware systems, and
 ### Repository Structure
 
 ```text
-data/
-├── raw/
-├── processed/
-├── history/
-└── archive/
-
 dashboard/
 ├── aircraft_map.html
 └── index.html
+
+data/
+├── history/
+├── processed/
+├── raw/
+└── archive/
+
+reports/
+├── Phase-2-Aircraft-Traffic-Analysis-Around-Ankara.md
+└── Phase-2-Preliminary-Dataset-Analysis.md
 
 visualizations/
 ├── aircraft_activity_by_hour.png
@@ -1234,7 +1238,7 @@ visualizations/
 ├── operator_trend_analysis.png
 └── traffic_forecast_experiment.png
 
-analysis/
+Analysis Scripts
 ├── analysis_altitude_distribution.py
 ├── analysis_traffic_density.py
 ├── analysis_flight_corridors.py
@@ -1246,11 +1250,73 @@ analysis/
 ├── aviation_dashboard.py
 └── aviation_dashboard_advanced.py
 
-reports/
-└── README.md
+Core Services
+├── log_aircraft.py
+└── trail_generator.py
+
+images/
+├── ground-station-setup.jpg
+├── opensky-account.png
+├── opensky-sensors.png
+├── docker-services.png
+└── radar-dashboard.png
 ```
 
 ---
+
+### Completed Phases
+
+✅ Phase 1 – ADS-B Ground Station
+
+✅ Phase 2 – Aircraft Traffic Analysis Around Ankara
+
+✅ Phase 5 – Aviation Analytics
+
+✅ Phase 6 – Trend and Predictive Aviation Analytics
+
+---
+
+### Current Project Scope
+
+- ADS-B Telemetry Collection
+- OpenSky Network Integration
+- Aircraft Activity Analytics
+- Operator Analytics
+- Altitude Analytics
+- Traffic Density Analysis
+- Flight Corridor Analysis
+- Aviation Dashboard Development
+- Trend Analysis
+- Forecasting Experiments
+
+### Overall Status
+
+✅ Active and Operational
+
+---
+
+## Future Development
+
+Planned future improvements include:
+
+- Advanced aircraft traffic analytics
+- Historical trend analysis
+- Aircraft type recognition tools
+- Interactive data visualizations
+- Automated reporting systems
+- Real-time flight statistics
+- Python-based analytics dashboards
+- Expanded OpenSky Network integration
+
+---
+
+## Author
+
+### Sarp Akar
+
+Sept 2026
+
+**Always Curious. Always Learning.**
 
 ## Future Development
 
