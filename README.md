@@ -1,7 +1,5 @@
 # Aviation Data Project
 
-![ADS-B Ground Station](ground-station-setup.jpg)
-
 Aviation Data Project is an ongoing aerospace and aviation data initiative that explores real-world aircraft operations through ADS-B technology, OpenSky Network integration, flight tracking, and data analysis.
 
 The project combines aviation, programming, software-defined radio (SDR), hardware systems, and data analytics to collect, visualize, and analyze real aircraft traffic data using a personal ADS-B receiving station.
